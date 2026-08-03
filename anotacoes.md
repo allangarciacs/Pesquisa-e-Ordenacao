@@ -17,71 +17,71 @@ Atividade de fixação
       - complexidade
       - porções de ordenação
 
-  -> bolha (bubble sort):
-    - memória interna
-    - estável
-    - O(n^2)
-    - porção ordenada
-
-  -> seleção (selection sort)
-    - memória interna
-    - instável
-    - O(nˆ2)
-    - porção ordenada: início
-
-  -> inserção (inserction sort)
-    - memória interna
-    - estável
-    - O(nˆ2)
-    - porção ordenada: início
-
-  -> pente (combsort):
-    - memória interna
-    - instável
-    - O(n²) (caso médio: ~O(n log n))
-    - diminui o intervalo (gap) entre comparações
-  
-  -> agitação (shakesort ou cocktailsort):
-    - memória interna
-    - estável
-    - O(n²)
-    - porção ordenada nas duas extremidades
-  
-  -> shellsort:
-    - memória interna
-    - instável
-    - O(n²) (depende da sequência de gaps; pode chegar a ~O(n log² n))
-    - ordenação por intervalos (gaps) decrescentes
-
-  -> bucketsort:
-    - memória externa (auxiliar)
-    - estável (quando a ordenação dos baldes é estável)
-    - O(n + k)
-    - distribuição em baldes e ordenação de cada balde
-
-  -> radix:
-    - memória externa (auxiliar)
-    - estável
-    - O(d · (n + k))
-    - ordenação por dígitos (LSD ou MSD)
-  
-  -> heapsort:
-    - memória interna
-    - instável
-    - O(n log n)
-    - árvore heap (máximo ou mínimo)
-  
-  -> mergesort:
-    - memória externa (auxiliar)
-    - estável
-    - O(n log n)
-    - divisão e conquista (divide e intercala)
-  
-  -> quicksort:
-    - memória interna
-    - instável
-    - O(n log n) (caso médio) / O(n²) (pior caso)
-    - divisão e conquista com pivô
+      -> bolha (bubble sort):
+        - memória interna
+        - estável
+        - O(n^2)
+        - porção ordenada
+    
+      -> seleção (selection sort)
+        - memória interna
+        - instável
+        - O(nˆ2)
+        - porção ordenada: início
+    
+      -> inserção (inserction sort)
+        - memória interna
+        - estável
+        - O(nˆ2)
+        - porção ordenada: início
+    
+      -> pente (combsort):
+        - memória interna
+        - instável
+        - O(n²) (caso médio: ~O(n log n))
+        - diminui o intervalo (gap) entre comparações
+      
+      -> agitação (shakesort ou cocktailsort):
+        - memória interna
+        - estável
+        - O(n²)
+        - porção ordenada nas duas extremidades
+      
+      -> shellsort:
+        - memória interna
+        - instável
+        - O(n²) (depende da sequência de gaps; pode chegar a ~O(n log² n))
+        - ordenação por intervalos (gaps) decrescentes
+    
+      -> bucketsort:
+        - memória externa (auxiliar)
+        - estável (quando a ordenação dos baldes é estável)
+        - O(n + k)
+        - distribuição em baldes e ordenação de cada balde
+    
+      -> radix:
+        - memória externa (auxiliar)
+        - estável
+        - O(d · (n + k))
+        - ordenação por dígitos (LSD ou MSD)
+      
+      -> heapsort:
+        - memória interna
+        - instável
+        - O(n log n)
+        - árvore heap (máximo ou mínimo)
+      
+      -> mergesort:
+        - memória externa (auxiliar)
+        - estável
+        - O(n log n)
+        - divisão e conquista (divide e intercala)
+      
+      -> quicksort:
+        - memória interna
+        - instável
+        - O(n log n) (caso médio) / O(n²) (pior caso)
+        - divisão e conquista com pivô
 
   2) Qual o melhor algoritmo de ordenação?
       -> depende do:
@@ -100,7 +100,8 @@ Conceitos iniciais
     . por que se ordena? para otimizar a busca ou pesquisa.
   - pesquisar: localizar ou buscar um dado dentro de uma estrutura, via alguma chave.
     . recuperar: localizar ou buscar dados com RELEVÂNCIA (semântica ou significado)
-  - complexidade de um algoritmo: é o esforço computacional de um algoritmo, ou seja, quanto de recurso ele aloca para realizar sua ou suas tarefas.
+  - complexidade de um algoritmo: é o esforço computacional de um algoritmo, ou seja, quanto de recurso ele aloca para realizar sua
+  ou suas tarefas.
     . alta complexidade : mais esforço
     . baixa complexidade: menos esforço
     . Notação Big 0

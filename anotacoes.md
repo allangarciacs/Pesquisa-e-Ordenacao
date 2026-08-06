@@ -2,6 +2,10 @@
 
 ### **Semana 2**
 <pre>
+------- Aula 2 (06/08/2026) -------
+
+MVC em java e python
+
 ------- Aula 1 (03/08/2026) -------
   
 Programar em MVC (Model, View, Controller).

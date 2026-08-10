@@ -1,5 +1,15 @@
 # Anotações da disciplina
 
+### **Semana 3**
+<pre>
+------- Aula 1 (10/08/2026) -------
+  
+Utilizar como base o código da semana passada, em modelo MVC: ListaBolha, ListaSelecao, ListaInsercao
+  Cada lista com 5000 itens, calcular o tempo de ordenação de cada uma. 
+  Model (Utilidades) - View (ListaView) - Controller (ListaController)
+-----------------------------------
+</pre>
+
 ### **Semana 2**
 <pre>
 ------- Aula 2 (06/08/2026) -------
@@ -12,7 +22,7 @@ Programar em MVC (Model, View, Controller).
 
 Estabilidade do algoritmo:
   Estável  -> o processo de ordenação sempre garante a ordenação temporária da estrutura.
-  Instável -> o processo de ordenação não garante a ordenação temporária da estrutura.
+  Instável -> o processo de ordenação não garante a ordenação temporária da estrutura. São os ideais, geralmente.
 
 Atividade de fixação
   1) Pesquisar sobre os métodos de ordenação e categoriza-los em:
@@ -22,22 +32,24 @@ Atividade de fixação
       - porções de ordenação
 
       -> bolha (bubble sort):
-        - memória interna
+        - memória interna (RAM)
         - estável
         - O(n^2)
-        - porção ordenada
+        - porção ordenada: final da estrutura
     
       -> seleção (selection sort)
         - memória interna
-        - instável
+        - instável 
         - O(nˆ2)
-        - porção ordenada: início
+        - porção ordenada: início da estrutura
+        - Laça o menor da direita da estrutura.
     
       -> inserção (inserction sort)
         - memória interna
         - estável
         - O(nˆ2)
-        - porção ordenada: início
+        - porção ordenada: início da estrutura
+        - Cada valor da direita da estrutura é inserido na sua posição correta na porção da esquerda.
     
       -> pente (combsort):
         - memória interna

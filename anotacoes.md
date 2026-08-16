@@ -2,7 +2,7 @@
 
 ### **Semana 3**
 <pre>
-------- Aula 1 (10/08/2026) -------
+------- Aula 1 (10/08/2026) ------
 
   javac -d bin (Get-ChildItem -Recurse src -Filter *.java).FullName
 

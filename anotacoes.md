@@ -2,11 +2,11 @@
 
 ### **Semana 3**
 <pre>
-------- Aula 1 (10/08/2026) ------
+------- Aula 1 (10/08/2026) -------
 
-  javac -d bin (Get-ChildItem -Recurse src -Filter *.java).FullName
+javac -d bin src/projeto/Main.java src/projeto/controller/Controller.java src/projeto/model/Utilidades.java src/projeto/view/Exibicao.java
 
-  java -cp bin projeto.Main
+java -cp bin projeto.Main
   
 Utilizar como base o código da semana passada, em modelo MVC: ListaBolha, ListaSelecao, ListaInsercao
   Cada lista com 5000 itens, calcular o tempo de ordenação de cada uma. 

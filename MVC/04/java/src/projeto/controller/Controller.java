@@ -28,36 +28,39 @@ public class Controller {
         List<Integer> listaAgitacao = new ArrayList<>(listaOriginal);
         List<Integer> listaJava = new ArrayList<>(listaOriginal);
 
+        // BOLHA
         tempoInicioBolha = System.nanoTime();
         Complexidade complexidadeBolha = Ordenacao.bolha(listaBolha);
         tempoFimBolha = System.nanoTime();
 
-        Exibicao.exibirTempoExecucao(
-            (tempoFimBolha - tempoInicioBolha) / 1000000,
-            "bolha"
-        );
+        Exibicao.exibirTempoExecucao((tempoFimBolha - tempoInicioBolha) / 1000000, "bolha");
+        Exibicao.exibirComplexidade("bolha", complexidadeBolha.getComparacoes(), complexidadeBolha.getTrocas());
 
-        Exibicao.exibirComplexidade(
-            "bolha",
-            complexidadeBolha.getComparacoes(),
-            complexidadeBolha.getTrocas()
-        );
-
+        // INSERT
         tempoInicioInsert = System.nanoTime();
-        Ordenacao.bolha(listaInsercao);
+        Complexidade complexidadeInsert = Ordenacao.insercao(listaInsercao);
         tempoFimInsert = System.nanoTime();
-        Exibicao.exibirTempoExecucao((tempoFimInsert - tempoInicioInsert) / 1000000, "insercao");                   
 
+        Exibicao.exibirTempoExecucao((tempoFimInsert - tempoInicioInsert) / 1000000, "insert");
+        Exibicao.exibirComplexidade("insert", complexidadeInsert.getComparacoes(), complexidadeInsert.getTrocas());                 
+
+        // SELECT
         tempoInicioSelect = System.nanoTime();
-        Ordenacao.bolha(listaSelecao);
+        Complexidade complexidadeSelect = Ordenacao.selecao(listaSelecao);
         tempoFimSelect = System.nanoTime();
-        Exibicao.exibirTempoExecucao((tempoFimSelect - tempoInicioSelect) / 1000000, "selecao");    
 
+        Exibicao.exibirTempoExecucao((tempoFimSelect - tempoInicioSelect) / 1000000, "select");
+        Exibicao.exibirComplexidade("select", complexidadeSelect.getComparacoes(), complexidadeSelect.getTrocas());      
+
+        // SHAKE
         tempoIncioAgitacao = System.nanoTime();
-        Ordenacao.agitacao(listaAgitacao);
+        Complexidade complexidadeShake = Ordenacao.agitacao(listaAgitacao);
         tempoFimAgitacao = System.nanoTime();
-        Exibicao.exibirTempoExecucao((tempoFimAgitacao - tempoIncioAgitacao) / 1000000, "agitacao"); 
 
+        Exibicao.exibirTempoExecucao((tempoFimAgitacao - tempoIncioAgitacao) / 1000000, "shake");
+        Exibicao.exibirComplexidade("shake", complexidadeShake.getComparacoes(), complexidadeShake.getTrocas());      
+
+        // PADRAO DO JAVA
         tempoInicioJava = System.nanoTime();
         Collections.sort(listaJava);
         tempoFimJava = System.nanoTime();

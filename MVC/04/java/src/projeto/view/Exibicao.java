@@ -28,7 +28,7 @@ public class Exibicao {
     }
 
     public static void exibirComplexidade(String tipo, int comparacoes, int trocas) {
-        System.out.println("Complexidade em " + tipo + ": Comparacoes: " + comparacoes + " | Trocas: " + trocas);
+        System.out.println("Complexidade em " + tipo + ": Comparacoes: " + comparacoes + " | Trocas: " + trocas + "\n");
     }
 
     // public static void menuTipoLista() {

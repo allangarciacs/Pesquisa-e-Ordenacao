@@ -1,9 +1,23 @@
 # Anotações da disciplina
 
+### **Semana 4**
+<pre>
+-----------------------------------
+Entrega do trabalho de benchmark com 5 algoritmos de ordenação (bubble, insert, select, shake e .sort padrão da linguagem).
+
+Atividade (fazer em c#)
+  1 - Ordernar uma lista ou chave de objetos
+  2 - Ordenar por data e id na 2ª chave (por exemplo)
+-----------------------------------
+</pre>
+
+
 ### **Semana 3**
 <pre>
 ------- Aula 1 (10/08/2026) -------
 
+javac -d bin src/projeto/Main.java src/projeto/controller/Controller.java src/projeto/model/Utilidades.java src/projeto/view/Exibicao.java src/projeto/controller/Ordenacao.java
+  
 javac -d bin src/projeto/Main.java src/projeto/controller/Controller.java src/projeto/model/Utilidades.java src/projeto/view/Exibicao.java
 
 java -cp bin projeto.Main

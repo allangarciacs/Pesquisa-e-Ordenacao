@@ -1,5 +1,36 @@
 # Anotações da disciplina
 
+### **Semana 5**
+------- Aula 1 (24/08/2026) -------
+Ordenação de listas de objetos
+  -> Usar o compareTo de maneira geral
+```java
+    @Override
+    public int compareTo(Pessoa o) {
+        int resultadoNome = this.nome.compareTo(o.getNome());
+        if (resultadoNome != 0) { 
+            return resultadoNome;
+        }
+        return Integer.compare(this.idade, o.getIdade());
+    }
+```
+  -> Usar o .sort na Main somente de maneira temporária
+```java
+        lista.sort((p1, p2) -> Integer.compare(p1.getIdade(), p2.getIdade()));
+```
+
+Prova 01
+<pre>
+-> Algoritmo estável e instável 
+-> Codificação simples e não simples
+-> Importância da ordenação 
+-> Método para reescrever ou controlar para garantir que a listas de objetos sejam ordenadas pela primeira/segunda/etc chave (compareTO)
+-> O que é complexidade de algoritmos
+-> Como saber se algum algoritmo tem maior ou pior complexidade (comparar o número de comparações e trocas)
+-> Saber escrever um algoritmo de ordenação
+</pre>
+
+
 ### **Semana 4**
 <pre>
 -----------------------------------

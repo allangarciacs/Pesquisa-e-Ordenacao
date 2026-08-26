@@ -1,5 +1,99 @@
 # Anotações da disciplina
 
+### **Revisao Prova 01**
+
+Importância da ordenação
+  -> É ideal para otimizar buscas, pesquisas ou recuperações de dados dentro de uma estrutura.
+
+Complexidade de algotimos
+  -> É o **esforço computacional** de um algoritmo, em outras palavras, é o quanto de recurso que ele aloca para concluir suas tarefas.
+  -> Quanto maior a complexidade, mais esforço
+  -> A complexidade é medida a partir da **quantidade de trocas e comparações** que ele realiza.
+  <pre>
+      - O(n!)             - maior complexidade
+      - O(n^x)
+      - O(log n + n)
+      - O(n)
+      - O(log n)          - menor complexidade
+  </pre>
+  
+Estabilidade do algoritmo
+  -> Estável: o processo de ordenação garante a ordenação temporária da estrutura
+  <pre>
+            [4,8,1,3,4,2]
+            [4,1,3,4,2,8]
+            [1,3,4,2,4,8]
+            [1,3,2,4,4,8]
+            [1,2,3,4,4,8]
+            [1,2,3,4,4,8]
+  </pre>
+  -> Instável: o processo de ordenação não garante a ordenação temporária da estrutura
+    <pre>
+            [4,8,1,3,4,2]
+            [1,8,4,3,4,2]
+            [1,2,4,3,4,8]
+            [1,2,3,4,4,8]
+            [1,2,3,4,4,8]
+            [1,2,3,4,4,8]
+  </pre>
+
+Tipos de Codificação
+  -> Simples: Quando é trabalhado um tipo básico de dado, exemplo:
+  ```java
+  List<Integer> lista
+  ```
+  -> Complexo: Quando são trabalhados vários atributos, exemplo:
+  ```java
+  class Pessoa {
+      String nome;
+      int idade;
+      double salario;
+  }
+  ```
+
+CompareTo
+  -> É um método usado para definir ou controlar o método de ordenação de uma lista de objetos, permitindo que eles sejam ordenados pelas primeira segunda etc chave de comparação.
+  ```java
+    @Override
+  public int compareTo(Pessoa o) {
+      int resultado = this.nome.compareTo(o.getNome());
+  
+      if (resultado != 0) {
+          return resultado;
+      }
+  
+      return Integer.compare(this.idade, o.getIdade());
+  }
+```
+
+Resumindo, simples trabalha um tipo de dado enquanto complexo vários.
+
+Bubble:
+```java
+/* i menor que o size - 1
+// se o .get(i) maior que o get(i-1)
+// tmp igual get(i)
+// entao, seta o i no get(i + 1) 
+/* e seta o i + 1 no tmp
+
+    public void bubble (List<Integer> lista) {
+        boolean houveTroca;
+        int tmp;
+
+        do {
+            houveTroca = false;
+            for (int i = 0; i < lista.size()-1; i++) {
+                if (lista.get(i) > lista.get(i + 1)) {
+                    houveTroca = true;
+                    tmp = lista.get(i);
+                    lista.set(i, lista.get(i + 1));
+                    lista.set(i + 1, tmp);
+                }
+            }
+        } while (houveTroca);
+    }
+```
+
 ### **Semana 5**
 ------- Aula 1 (24/08/2026) -------
 Ordenação de listas de objetos

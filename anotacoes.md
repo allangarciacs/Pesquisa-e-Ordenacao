@@ -1,6 +1,11 @@
 # Anotações da disciplina
 
-### **Revisao Prova 01**
+### **Semana 6**
+## Aula 1 (31/08/2026) 
+Inserção melhor nos testes de benchmark
+
+
+### **Revisão Prova 01**
 
 Importância da ordenação
   -> É ideal para otimizar buscas, pesquisas ou recuperações de dados dentro de uma estrutura.

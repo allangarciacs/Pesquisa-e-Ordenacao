@@ -4,6 +4,9 @@
 ## Aula 1 (31/08/2026) 
 Inserção melhor nos testes de benchmark
 
+Pesquisar sobre, e adicionar no programa:
+  > heap sort 
+  > quick sort 
 
 ### **Revisão Prova 01**
 

@@ -1,5 +1,10 @@
 # Anotações da disciplina
 
+### **Semana 7**
+## Aula 1 (10/09/2026) 
+Manipulando arquivos e interface
+
+
 ### **Semana 6**
 ## Aula 1 (31/08/2026) 
 Inserção melhor nos testes de benchmark

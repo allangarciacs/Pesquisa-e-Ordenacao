@@ -1,9 +1,56 @@
 # Anotações da disciplina
 
+### **Semana 8**
+## Aula 1 (24/09/2026) 
+
+SHELL SORT (Passar para o benchmark)
+```java
+    public static Complexidade shell(List<Integer> lista) {
+        int n = lista.size();
+        int i, j, tmp;
+
+        int qtdComparacoes = 0, qtdTrocas = 0;
+        int distancia = 1;
+        int referenciaTamanho = 3;
+
+        do {
+            distancia = referenciaTamanho * distancia + 1;
+        } while (distancia < n);
+        
+        do {
+            distancia = (int)(distancia / referenciaTamanho);
+            
+            for (i = distancia; i < n; i++) {
+                tmp = lista.get(i);
+                for (j = i - distancia; j >= 0; j = j - distancia) {
+                    qtdComparacoes++;
+                    if (tmp < lista.get(j)) {
+                        lista.set(j + distancia, lista.get(j));
+                        qtdTrocas++;
+                    } else break;
+                }
+                lista.set(j + distancia, tmp);
+                qtdTrocas++;
+            }
+        } while (distancia > 1);
+        return new Complexidade(qtdComparacoes, qtdTrocas);
+    }
+```
+Algoritmos que usam distância não são recomendados em vetores pequenos (PENTE, QUICK, SHELL)
+
+bogo sort 
+
+Renato Augusto Tech 
+Augusto Galego
+Davi dos Santos Cavenagno
+
+1. BD 
+  2. Arquivo 
+    3. Lista
+
 ### **Semana 7**
 ## Aula 1 (10/09/2026) 
 Manipulando arquivos e interface
-
 
 ### **Semana 6**
 ## Aula 1 (31/08/2026) 

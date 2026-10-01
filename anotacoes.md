@@ -1,5 +1,8 @@
 # Anotações da disciplina
 
+### **Semana 9**
+Pesquisar sobre e implementar -> Garbage collector (java) 
+
 ### **Semana 8**
 ## Aula 1 (24/09/2026) 
 

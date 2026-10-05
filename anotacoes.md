@@ -1,5 +1,27 @@
 # Anotações da disciplina
 
+### **Semana 10**
+## Aula 1 (05/10/2026)
+. Key pressed - ativa quando qualquer tecla é pressionada
+. Key realesed - ativa quando o user solta qualquer tecla
+. Key typed - 
+
+```java
+private void txtEntradaKeyPressed(java.awt.event.KeyEvent evt) {
+    if (evt.getKeyCode() == KeyEvent.VK_ENTER) { // caso ENTER for digitado
+        // acao a ser executada
+    }
+
+    // Para ignorar caracteres especiais
+    // Cria um ArrayList com os codigos dos carcteres (ou seu nome - VK_ENTER)
+
+    if (!teclasProibidas.contains(evt.getKeyCode()) && !evt.isActionKey()) {
+        if (evt.getKeyChar() != KeyEvent.CHAR_UNDEFINED && !Character.isISOControl(evt.getKeyChar()))
+            txaResultadoDinamico.append(String.valueOf(evt.getKeyChar()));
+        }
+}
+```
+
 ### **Semana 9**
 Pesquisar sobre e implementar -> Garbage collector (java) 
 

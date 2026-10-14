@@ -1,6 +1,45 @@
 # Anotações da disciplina
 
 ### **Semana 10**
+## Aula 1 (14/10/2026)
+Roteiro de estudo:
+1) o universo de ordenação
+   - algoritmos
+   - conceitos
+2) o universo de pesquisa
+   - conceitos
+   - algoritmos
+     - sequencial
+     - binário
+     - digital
+3) HASH
+   - função de espalhamento, ou seja, um dado é armazenado ou pesquisado na estrutura via um código de endereçamento
+   - conceitos
+     - tabela hash: estrutura de dados que armazena os dados
+     - função hash: cálculo de endereçamento para armazenar e buscar elementos na estrutura - 0(1)
+     - tipos de tratamentos de colisões
+       - listas encadeadas
+       - open addressing ou closed hashing
+       - java trata colisões com lista encadeadas
+    - complexidade
+      - baixa = menor esfoço
+      - alta = maior esforço 
+    - hash não ordena, por isso não é bom para BD
+  
+# Atividade: Pesquisar diferença de hashset para hashmap (com exemplos)
+
+# Trabalho Semestral em HashMap
+Construir um programa (no modelo MVC) em Java, C# ou Python que: 
+    1) armazene em um HashMap os dados do arquivo telephony_sessions.txt, usando como classe a classe implementada em Sessao.java
+        - ler arquivo
+        - splitar as linhas
+        - criar um objeto do tipo Sessao
+        - adicionar (put) no HashMap
+    2) permite procurar um número de celular e o retorne seja os dados da sessão
+    3) DESAFIO: pesquise sobre o uso de threads e tente procurar N celulares ao mesmo tempo 
+   
+
+### **Semana 10**
 ## Aula 1 (05/10/2026)
 . Key pressed - ativa quando qualquer tecla é pressionada
 . Key realesed - ativa quando o user solta qualquer tecla

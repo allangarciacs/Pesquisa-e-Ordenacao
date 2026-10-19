@@ -1,5 +1,9 @@
 # Anotações da disciplina
 
+### **Semana 11**
+## Aula 1 (19/10/2026)
+Tabela hash é somente boa se a estrutura for grande, porque quanto maior a tabela menos chance de ocorrer colisões. Colisões são resolvidas utilizando listas. 
+
 ### **Semana 10**
 ## Aula 1 (14/10/2026)
 Roteiro de estudo:

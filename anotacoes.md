@@ -1,5 +1,20 @@
 # Anotações da disciplina
 
+### **Semana 12**
+## Aula 1 (26/10/2026)
+Pesquisa Digital
+   - Vocabulário
+   - Letras autorizadas
+   - Palavras dispostas no texto
+     
+Ávore TRIE (Árvore de Prefixo) ou PATRICIA (ideal)
+   - Palavra
+   - Nó de colisão 
+   - Armazenamento
+
+Para mestrado (POSComp - Bolsa), esse asunto cai 100%.
+Dicionários em Python e JavaScript (node JS) TensorFlowJS
+
 ### **Semana 11**
 ## Aula 1 (19/10/2026)
 Tabela hash é somente boa se a estrutura for grande, porque quanto maior a tabela menos chance de ocorrer colisões. Colisões são resolvidas utilizando listas. 

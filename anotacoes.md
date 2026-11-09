@@ -1,5 +1,24 @@
 # Anotações da disciplina
 
+### **Semana 13**
+## Aula 1 (09/11/2026)
+# BALANCEAMENTO DE ÁROVRES
+
+1. Quando tem muita CONSULTA, o hash é a melhor estrutura de dados, pois ele possui um cálculo de endereçamento eficiente.  
+2. Para relatório, árvore é melhor, porque hash não pode ser ordenado. Só que para a árvore ser excelente, é necessário que ela seja BALANCEADA. Porque quanto menos profundidade na árvore, menos comparações ela faz.
+3. Foco do balanceamento é reduzir a profundidade, ou seja, reduzir o número de comparações
+4. Fator de balanceamento = altura da subárvore da esquerda - altura da subárvore da direita
+5. Enquanto o nó de balanceamento for -1,0 e 1 a árvore esta balanceada, acima ou igual a 2 não.   
+
+Duas técnicas de balanceamento: 
+1. DSW: Árvore toda bagunçada inicialemente
+2. AVL: Balanceia na medida que os dados vão sendo inseridos
+
+Rotação simples: - - ou + + (sinais iguais) - O pai vira filho e o filho vira pai
+Rotação dupla  : + - ou - + (sinais diferentes)
+
+Dica de estudo: Dicionário JSON
+
 ### **Semana 12**
 ## Aula 1 (26/10/2026)
 Pesquisa Digital

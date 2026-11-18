@@ -28,15 +28,18 @@ public class GerenciadorArquivos {
 
             // Spltar
             String linha;
+
+            br.readLine(); // le a primeira linha (q eh o cabecalho, ent pula ele)
+
             while ((linha = br.readLine()) != null) {
                 String[] partes = linha.split(";", 5);
 
                 if (partes.length == 5) {
-                    String id = partes[0].trim();
+                    int id = Integer.parseInt(partes[0].trim());
                     String nomeSplit = partes[1].trim();
                     String categoria = partes[2].trim();
-                    String preco = partes[3].trim();
-                    String estoque = partes[4].trim();
+                    double preco = Double.parseDouble(partes[3].trim());
+                    int estoque = Integer.parseInt(partes[4].trim());
 
                     Produto produto = new Produto(id, nomeSplit, categoria, preco, estoque);
 
@@ -45,7 +48,7 @@ public class GerenciadorArquivos {
             }
 
             System.out.println("Arquivo carregado!");
-            
+
             for (Produto p : listaProdutos) {
                 System.out.println(p);
             }
@@ -58,39 +61,23 @@ public class GerenciadorArquivos {
     }
 
     public void exportarLista(String nome) {
-        try (FileWriter fw = new FileWriter(nome, true)) {
-            try (BufferedReader br = new BufferedReader(
-                    new FileReader(nome))) {
+        try (FileWriter fw = new FileWriter(nome)) {
 
-                String linha;
-                while ((linha = br.readLine()) != null) {
-                    String[] partes = linha.split(";", 5);
+            fw.write("id;nome;categoria;preco;estoque\n");
 
-                    if (partes.length == 5) {
-                        String id = partes[0].trim();
-                        String nomeSplit = partes[1].trim();
-                        String categoria = partes[2].trim();
-                        String preco = partes[3].trim();
-                        String estoque = partes[4].trim();
-
-                        Produto produto = new Produto(id, nomeSplit, categoria, preco, estoque);
-
-                        listaProdutos.add(produto);
-                    }
-                }
-
-            } catch (IOException e) {
-                System.out.println("Erro ao ler o arquivo '"
-                        + nome + "', erro: "
-                        + e.getMessage());
+            for (Produto p : listaProdutos) {
+                fw.write(p.getId() + ";"
+                        + p.getNome() + ";"
+                        + p.getCategoria() + ";"
+                        + p.getPreco() + ";"
+                        + p.getEstoque() + "\n");
             }
-
-            fw.write(listaProdutos + "\n");
+            System.out.println("Arquivo exportado!");
 
         } catch (IOException e) {
             System.out.println("Erro ao exportar o arquivo '"
-                    + nome + "', erro: "
-                    + e.getMessage());
+                    + nome + "', erro: " + e.getMessage());
         }
     }
 }
+
